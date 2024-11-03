@@ -8,6 +8,8 @@ steps:
   - --entry-point=main
   - --region=asia-northeast1
   - --trigger-http
+  - --allow-unauthenticated
+  - --ingress-settings=internal-and-gclb
   - --gen2
   - --runtime=python312
   - --source=.
