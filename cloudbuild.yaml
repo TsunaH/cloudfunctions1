@@ -1,0 +1,16 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - $_SERVICE_NAME
+  - --entry-point=main
+  - --region=asia-northeast1
+  - --trigger-http
+  - --gen2
+  - --runtime=python312
+  - --source=.
+  - --vpc-connector=test-connect
+options:
+  logging: CLOUD_LOGGING_ONLY
