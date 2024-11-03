@@ -9,7 +9,7 @@ steps:
   - --region=asia-northeast1
   - --trigger-http
   - --allow-unauthenticated
-  - --ingress-settings=internal-and-gclb
+  - --ingress-settings=internal-only
   - --gen2
   - --runtime=python312
   - --source=.
